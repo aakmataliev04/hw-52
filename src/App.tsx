@@ -1,6 +1,5 @@
 import './App.css';
 import Card from "./components/Card/Card.tsx";
-import './cards.css';
 
 const App = () => {
   return (
