@@ -1,5 +1,31 @@
-body {
-  background: #cccccc;
+#root:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+            darkgray,
+            silver,
+            lightgoldenrodyellow,
+            blanchedalmond,
+            lightgrey,
+            lightsteelblue,
+            linen,
+            lightyellow,
+            #666666
+
+
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 200s linear infinite;
+    transition: opacity 0.1s ease-in-out;
+    border-radius: 10px;
 }
 #root {
   max-width: 1280px;
@@ -23,7 +49,6 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 .button-85:before {
   content: "";
   background: linear-gradient(
@@ -47,7 +72,7 @@ body {
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: glowing-button-85 10s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
@@ -57,7 +82,7 @@ body {
     background-position: 0 0;
   }
   50% {
-    background-position: 400% 0;
+    background-position: 100% 0;
   }
   100% {
     background-position: 0 0;
